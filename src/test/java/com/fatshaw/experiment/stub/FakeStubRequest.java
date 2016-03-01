@@ -1,12 +1,11 @@
-package request;
+package com.fatshaw.experiment.stub;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
- * Created by xiaochaojie on 16/2/29.
+ * Created by xiaochaojie on 16/3/1.
  */
-public class StubRequest implements Serializable {
+public class FakeStubRequest {
 
     private int a;
     private String b;

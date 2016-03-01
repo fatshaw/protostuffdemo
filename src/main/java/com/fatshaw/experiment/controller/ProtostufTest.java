@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import request.StubRequest;
 import response.StubResponse;
 
-import java.math.BigDecimal;
-
 /**
  * Created by xiaochaojie on 16/2/29.
  */
@@ -20,9 +18,9 @@ public class ProtostufTest {
     @RequestMapping("/stub")
     public StubResponse testStub(@RequestBody StubRequest request) {
         StubResponse stubResponse = new StubResponse();
-        stubResponse.setA(1);
-        stubResponse.setB("asdf");
-        stubResponse.setC(BigDecimal.ONE);
+        stubResponse.setA(request.getA());
+        stubResponse.setB(request.getB());
+        stubResponse.setC(request.getC());
         return stubResponse;
     }
 
