@@ -9,30 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <name>Nexus Public Repository</name>
-            <url>http://db-prodb-cache05.db01.baidu.com:8081/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <name>Nexus Public Repository</name>
-            <url>http://db-prodb-cache05.db01.baidu.com:8081/nexus/content/groups/public/</url>
-        </pluginRepository>
-    </pluginRepositories>
-
     <properties>
         <springframework.version>4.1.3.RELEASE</springframework.version>
         <log4j.version>2.1</log4j.version>
@@ -363,17 +339,4 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>baidu_local</id>
-            <name>Baidu Internal Repository</name>
-            <url>http://db-prodb-cache05.db01.baidu.com:8081/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>baidu_local_snapshot</id>
-            <name>Baidu Internal Repository</name>
-            <url>http://db-prodb-cache05.db01.baidu.com:8081/nexus/content/repositories/snapshots/</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
